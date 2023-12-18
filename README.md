@@ -1,3 +1,3 @@
-### cpp_project_templete
+### cpp_project_template
 
 - template for cpp projects
