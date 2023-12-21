@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.11)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,7 +11,7 @@ project(
   LANGUAGES CXX
   VERSION 1.0.0
   DESCRIPTION "C++ Project Template"
-  HOMEPAGE_URL "studio.holyground.com"
+  HOMEPAGE_URL "https://github.com/zozibush/"
 )
 message(STATUS)
 message(STATUS "Started all process in ${PROJECT_NAME} CMakeLists.txt.")
@@ -125,6 +125,8 @@ set(${PROJECT_NAME}_SOURCE_FILES
 # target_compile_options(${PROJECT_NAME} PRIVATE
 # ${CPP_COMFILE_FLAGS}
 # )
+
+add_subdirectory(${${PROJECT_NAME}_TEST_PATH})
 message(STATUS)
 message(STATUS "Finished all process in ${PROJECT_NAME} CMakeLists.txt.")
 message(STATUS)
